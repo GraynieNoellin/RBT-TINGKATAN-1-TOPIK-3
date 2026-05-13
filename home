@@ -1,0 +1,812 @@
+# KOD LAYOUT INTERAKTIF RBT TINGKATAN 1
+
+## Topik 1.1.2 – Mengenalpasti Elemen Reka Bentuk Berdasarkan Produk yang Dipilih
+
+> Semua kod di bawah boleh digunakan dalam Google Sites, CodePen, Canva Website atau fail HTML biasa.
+> Setiap layout mempunyai elemen interaktif menggunakan HTML, CSS dan JavaScript.
+
+---
+
+# 1. HOME / HALAMAN UTAMA
+
+```html
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RBT Tingkatan 1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f8ff;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#12307c;
+}
+
+.menu a{
+text-decoration:none;
+margin:0 10px;
+color:#222;
+font-weight:600;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero-text h1{
+font-size:52px;
+color:#12307c;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.btn{
+background:#2f63ff;
+color:white;
+padding:15px 25px;
+border:none;
+border-radius:12px;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:#163fb5;
+}
+
+.hero img{
+width:100%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:50px;
+}
+
+.card{
+background:#f5f8ff;
+padding:25px;
+border-radius:20px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#dfe9ff;
+}
+
+.card i{
+font-size:40px;
+color:#2f63ff;
+margin-bottom:15px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+<div class="logo">RBT TINGKATAN 1</div>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Pengenalan</a>
+<a href="#">Elemen</a>
+<a href="#">Teroka</a>
+<a href="#">Aktiviti</a>
+</div>
+</nav>
+
+<div class="hero">
+<div class="hero-text">
+<h1>PENGENALAN KEPADA REKA BENTUK DAN TEKNOLOGI</h1>
+<p>Standard Pembelajaran 1.1.2 Mengenalpasti elemen reka bentuk berdasarkan produk yang dipilih.</p>
+<button class="btn" onclick="mulaBelajar()">MULA BELAJAR</button>
+</div>
+
+<div>
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+</div>
+</div>
+
+<div class="cards">
+<div class="card">
+<i class="fa-solid fa-pencil-ruler"></i>
+<h3>Mengenal Elemen</h3>
+<p>Kenali 8 elemen reka bentuk.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-lightbulb"></i>
+<h3>Analisis Produk</h3>
+<p>Mengenal pasti elemen pada produk sebenar.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-gamepad"></i>
+<h3>Aktiviti Interaktif</h3>
+<p>Belajar melalui permainan dan kuiz.</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function mulaBelajar(){
+alert("Mari belajar Elemen Reka Bentuk!");
+}
+</script>
+
+</body>
+</html>
+```
+
+---
+
+# 2. HALAMAN PENGENALAN
+
+```html
+<section class="intro">
+<div class="video-box">
+<iframe width="100%" height="315"
+src="https://www.youtube.com/embed/8w2n1g7fX4k"
+title="YouTube video"
+frameborder="0"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="intro-text">
+<h1>Pengenalan Reka Bentuk</h1>
+<p>
+Reka bentuk ialah proses kreatif menghasilkan produk yang
+berfungsi, menarik dan sesuai digunakan.
+</p>
+
+<button onclick="fakta()">Tahukah Anda?</button>
+</div>
+</section>
+
+<script>
+function fakta(){
+alert("Elemen reka bentuk boleh ditemui pada semua produk di sekeliling kita!")
+}
+</script>
+
+<style>
+.intro{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+padding:30px;
+}
+
+.intro-text h1{
+font-size:45px;
+color:#12307c;
+margin-bottom:20px;
+}
+
+.intro-text p{
+line-height:1.8;
+font-size:18px;
+margin-bottom:20px;
+}
+
+.intro-text button{
+padding:12px 20px;
+border:none;
+background:#2f63ff;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+```
+
+---
+
+# 3. HALAMAN ELEMEN REKA BENTUK
+
+```html
+<div class="grid-elemen">
+
+<div class="elemen" onclick="papar('Garisan ialah cantuman titik yang bergerak.')">
+<h3>1. Garisan</h3>
+</div>
+
+<div class="elemen" onclick="papar('Rupa ialah hasil pertemuan hujung garisan.')">
+<h3>2. Rupa</h3>
+</div>
+
+<div class="elemen" onclick="papar('Bentuk mempunyai panjang, lebar dan tinggi.')">
+<h3>3. Bentuk</h3>
+</div>
+
+<div class="elemen" onclick="papar('Tekstur ialah jalinan permukaan sesuatu objek.')">
+<h3>4. Tekstur</h3>
+</div>
+
+<div class="elemen" onclick="papar('Saiz menunjukkan besar atau kecil sesuatu objek.')">
+<h3>5. Saiz</h3>
+</div>
+
+<div class="elemen" onclick="papar('Warna memberi identiti dan emosi pada produk.')">
+<h3>6. Warna</h3>
+</div>
+
+<div class="elemen" onclick="papar('Ruang ialah kawasan kosong atau terisi.')">
+<h3>7. Ruang</h3>
+</div>
+
+<div class="elemen" onclick="papar('Nilai menunjukkan tahap terang dan gelap.')">
+<h3>8. Nilai</h3>
+</div>
+
+</div>
+
+<div id="info"></div>
+
+<script>
+function papar(teks){
+document.getElementById('info').innerHTML = teks;
+}
+</script>
+
+<style>
+.grid-elemen{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:30px;
+}
+
+.elemen{
+background:white;
+padding:40px 20px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:0.3s;
+}
+
+.elemen:hover{
+background:#2f63ff;
+color:white;
+transform:scale(1.05);
+}
+
+#info{
+margin:20px;
+padding:20px;
+background:#dfe9ff;
+border-radius:15px;
+font-size:18px;
+}
+</style>
+```
+
+---
+
+# 4. HALAMAN GARISAN
+
+```html
+<div class="garisan-page">
+<div class="sidebar">
+<button onclick="tukar('Lurus')">Lurus</button>
+<button onclick="tukar('Lengkung')">Lengkung</button>
+<button onclick="tukar('Zigzag')">Zigzag</button>
+<button onclick="tukar('Putus-putus')">Putus-putus</button>
+</div>
+
+<div class="content">
+<h1>Garisan</h1>
+<p id="jenis">Klik jenis garisan di sebelah.</p>
+
+<div class="garisan-demo" id="demo"></div>
+</div>
+</div>
+
+<script>
+function tukar(jenis){
+let demo=document.getElementById('demo');
+let teks=document.getElementById('jenis');
+
+teks.innerHTML='Contoh Garisan: '+jenis;
+
+if(jenis=='Lurus'){
+demo.innerHTML='<hr style="height:4px;background:black">';
+}
+
+if(jenis=='Lengkung'){
+demo.innerHTML='~ ~ ~ ~';
+}
+
+if(jenis=='Zigzag'){
+demo.innerHTML='/\\/\\/\\';
+}
+
+if(jenis=='Putus-putus'){
+demo.innerHTML='- - - - -';
+}
+}
+</script>
+
+<style>
+.garisan-page{
+display:flex;
+gap:30px;
+padding:30px;
+}
+
+.sidebar{
+width:200px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.sidebar button{
+padding:15px;
+border:none;
+border-radius:12px;
+background:#2f63ff;
+color:white;
+cursor:pointer;
+}
+
+.content{
+flex:1;
+background:#f5f8ff;
+padding:30px;
+border-radius:20px;
+}
+
+.garisan-demo{
+margin-top:30px;
+font-size:50px;
+}
+</style>
+```
+
+---
+
+# 5. HALAMAN TEROKA PRODUK
+
+```html
+<div class="produk-grid">
+
+<div class="produk-card">
+<img src="https://cdn-icons-png.flaticon.com/512/3082/3082037.png">
+<h3>Kerusi</h3>
+<button onclick="produk('Kerusi mempunyai bentuk, warna dan tekstur.')">PILIH</button>
+</div>
+
+<div class="produk-card">
+<img src="https://cdn-icons-png.flaticon.com/512/824/824239.png">
+<h3>Botol Air</h3>
+<button onclick="produk('Botol air mempunyai rupa, saiz dan warna.')">PILIH</button>
+</div>
+
+<div class="produk-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048941.png">
+<h3>Lampu Meja</h3>
+<button onclick="produk('Lampu meja mempunyai garisan dan bentuk.')">PILIH</button>
+</div>
+
+</div>
+
+<div id="hasil"></div>
+
+<script>
+function produk(teks){
+document.getElementById('hasil').innerHTML=teks;
+}
+</script>
+
+<style>
+.produk-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:30px;
+}
+
+.produk-card{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.produk-card img{
+width:180px;
+height:180px;
+object-fit:contain;
+}
+
+.produk-card button{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+background:#2f63ff;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+#hasil{
+margin:30px;
+padding:20px;
+background:#dfe9ff;
+font-size:20px;
+border-radius:15px;
+}
+</style>
+```
+
+---
+
+# 6. HALAMAN INTERAKTIF PRODUK
+
+```html
+<div class="produk-detail">
+<img src="https://cdn-icons-png.flaticon.com/512/3082/3082037.png" class="kerusi">
+
+<div class="tag" style="top:100px;left:60%;" onclick="info('Garisan pada kaki kerusi')">1</div>
+<div class="tag" style="top:180px;left:70%;" onclick="info('Rupa pada tempat duduk')">2</div>
+<div class="tag" style="top:250px;left:55%;" onclick="info('Tekstur pada kain kerusi')">3</div>
+</div>
+
+<div id="maklumat"></div>
+
+<script>
+function info(teks){
+document.getElementById('maklumat').innerHTML=teks;
+}
+</script>
+
+<style>
+.produk-detail{
+position:relative;
+text-align:center;
+padding:40px;
+}
+
+.kerusi{
+width:350px;
+}
+
+.tag{
+position:absolute;
+width:40px;
+height:40px;
+border-radius:50%;
+background:red;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+font-weight:bold;
+}
+
+#maklumat{
+margin-top:20px;
+font-size:22px;
+background:#dfe9ff;
+padding:20px;
+border-radius:15px;
+}
+</style>
+```
+
+---
+
+# 7. HALAMAN AKTIVITI MURID
+
+```html
+<div class="aktiviti">
+<h1>Aktiviti Murid</h1>
+
+<div class="steps">
+<div class="step">
+<h2>1</h2>
+<p>Pilih produk di rumah</p>
+</div>
+
+<div class="step">
+<h2>2</h2>
+<p>Ambil gambar produk</p>
+</div>
+
+<div class="step">
+<h2>3</h2>
+<p>Labelkan elemen reka bentuk</p>
+</div>
+
+<div class="step">
+<h2>4</h2>
+<p>Muat naik tugasan</p>
+</div>
+</div>
+
+<button onclick="siap()">Saya Siap!</button>
+</div>
+
+<script>
+function siap(){
+alert('Tahniah! Aktiviti berjaya disiapkan.')
+}
+</script>
+
+<style>
+.aktiviti{
+padding:40px;
+text-align:center;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin:30px 0;
+}
+
+.step{
+background:#f5f8ff;
+padding:25px;
+border-radius:20px;
+}
+
+.step h2{
+background:#2f63ff;
+width:50px;
+height:50px;
+border-radius:50%;
+margin:auto;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:15px;
+}
+
+button{
+padding:15px 25px;
+border:none;
+background:#2f63ff;
+color:white;
+border-radius:12px;
+cursor:pointer;
+}
+</style>
+```
+
+---
+
+# 8. HALAMAN UJI MINDA
+
+```html
+<div class="quiz-box">
+<h1>Uji Minda</h1>
+<p>Apakah elemen reka bentuk yang menunjukkan permukaan sesuatu objek?</p>
+
+<button onclick="jawab('salah')">Garisan</button>
+<button onclick="jawab('betul')">Tekstur</button>
+<button onclick="jawab('salah')">Saiz</button>
+
+<h2 id="keputusan"></h2>
+</div>
+
+<script>
+function jawab(status){
+if(status=='betul'){
+document.getElementById('keputusan').innerHTML='Betul! Tahniah';
+}
+else{
+document.getElementById('keputusan').innerHTML='Cuba Lagi';
+}
+}
+</script>
+
+<style>
+.quiz-box{
+text-align:center;
+padding:50px;
+}
+
+.quiz-box button{
+display:block;
+margin:15px auto;
+padding:15px 25px;
+width:250px;
+border:none;
+background:#2f63ff;
+color:white;
+border-radius:12px;
+cursor:pointer;
+}
+
+#keputusan{
+margin-top:20px;
+color:#12307c;
+}
+</style>
+```
+
+---
+
+# 9. HALAMAN REFLEKSI DAN PENUTUP
+
+```html
+<div class="refleksi-page">
+<div class="emoji-box">
+<h1>Refleksi</h1>
+<p>Bagaimanakah perasaan anda selepas belajar topik ini?</p>
+
+<div class="emoji-list">
+<span onclick="emoji('Sangat Seronok 😊')">😊</span>
+<span onclick="emoji('Seronok 😄')">😄</span>
+<span onclick="emoji('Biasa 🙂')">🙂</span>
+<span onclick="emoji('Sukar 😥')">😥</span>
+</div>
+
+<h2 id="emosi"></h2>
+</div>
+
+<div class="tahniah">
+<h1>TAHNIAH!</h1>
+<p>Anda berjaya menamatkan pembelajaran.</p>
+<button onclick="muatTurun()">MUAT TURUN SIJIL</button>
+</div>
+</div>
+
+<script>
+function emoji(teks){
+document.getElementById('emosi').innerHTML=teks;
+}
+
+function muatTurun(){
+alert('Sijil berjaya dimuat turun!')
+}
+</script>
+
+<style>
+.refleksi-page{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+padding:40px;
+}
+
+.emoji-box,.tahniah{
+background:#f5f8ff;
+padding:40px;
+border-radius:25px;
+text-align:center;
+}
+
+.emoji-list span{
+font-size:50px;
+margin:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.emoji-list span:hover{
+transform:scale(1.3);
+}
+
+button{
+margin-top:20px;
+padding:15px 25px;
+border:none;
+background:#2f63ff;
+color:white;
+border-radius:12px;
+cursor:pointer;
+}
+</style>
+```
+
+---
+
+# CADANGAN PENAMBAHBAIKAN INTERAKTIF
+
+## Tambahan yang boleh dimasukkan:
+
+1. Audio penerangan setiap elemen reka bentuk.
+2. Drag and drop mengenal elemen.
+3. Gamifikasi menggunakan markah.
+4. Badge pencapaian murid.
+5. Sambungan Google Form untuk penilaian.
+6. Integrasi Canva / Genially / Wordwall.
+7. Leaderboard kelas.
+8. Timer kuiz.
+9. Sistem respons automatik.
+10. Paparan mesra telefon.
+
+---
+
+# CARA GUNA DALAM GOOGLE SITES
+
+1. Buka Google Sites.
+2. Klik Insert.
+3. Pilih Embed.
+4. Pilih Embed Code.
+5. Paste kod HTML.
+6. Klik Next → Insert.
+7. Ulang untuk setiap halaman.
+
+---
+
+# STRUKTUR HALAMAN YANG DISARANKAN
+
+1. Home
+2. Pengenalan
+3. Elemen Reka Bentuk
+4. Garisan
+5. Teroka Produk
+6. Produk Interaktif
+7. Aktiviti Murid
+8. Uji Minda
+9. Refleksi
+
+---
+
+# HASIL PEMBELAJARAN
+
+Melalui pakej multimedia ini, murid dapat:
+
+* Mengenalpasti elemen reka bentuk.
+* Menganalisis elemen pada produk sebenar.
+* Berinteraksi secara aktif.
+* Menjalankan pembelajaran kendiri.
+* Menguasai kemahiran abad ke-21.
